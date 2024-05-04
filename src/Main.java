@@ -6,5 +6,7 @@ public class Main {
         } catch (company.exceptions.InvalidAgeException e) {
             System.err.println(e.getMessage());
         }
+        company.interfaces.Messenger messenger = new company.implementations.EmailMessenger();
+        messenger.sendMessage("Dzień dobry!");
     }
 }
